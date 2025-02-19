@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel'
 import img1 from '../assets/image/hero-image.png';
 import img2 from '../assets/image/hero-image2.png';
 import img3 from '../assets/image/hero-image3.png';
+import digitalFarmer from '../assets/image/digital-farmer.png';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../styles/Home.scss';
 
@@ -70,8 +71,39 @@ const Home = () => {
           </div>
         </section>
       </section>
+      <section id="about">
+        <div className="about-container">
+          <div className="content">
+            <h3>About Project</h3>
+            <p>
+              Welcome to Agro App, a pioneering National Platform developed as
+              part of our college project for the subject of Web-Based
+              Programming. Implemented using PHP, our platform serves as a
+              comprehensive solution, offering a single point of access for
+              citizens to explore and discover various Government schemes related
+              to agriculture.
+            </p>
+            <p>
+              Agro App empowers users to effortlessly navigate through a myriad of
+              scheme information, tailored to their specific eligibility criteria.
+            </p>
+            <p>
+              With Agro App, users can easily identify and apply for the schemes
+              that best suit their agricultural needs. Furthermore, our platform
+              provides step-by-step guidance on the application process.
+            </p>
+            <a href="/about" className="view-more">View More →</a>
+          </div>
+          <div className="image-container">
+            <img
+              src={digitalFarmer}
+              alt="Video about myScheme"
+            />
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
 
-export default Home
+export default Home;
