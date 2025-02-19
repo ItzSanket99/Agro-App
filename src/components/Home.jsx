@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className='home'>
       <Carousel
-        infiniteLoop autoPlay showStatus={false} showArrows={false} showThumbs={false} showIndicators={false} interval={1000}
+        infiniteLoop autoPlay showStatus={false} showArrows={false} showThumbs={false} showIndicators={false} interval={3000}
       >
         <div className='carousel-item'>
           <img src={img1} alt="img1" />
@@ -34,8 +34,44 @@ const Home = () => {
           </div>
         </div>
       </Carousel>
+      <section id="scheme-section">
+        <div className="text-wrapper">
+          <div className="title-text">
+            <h1>Namaskar Dosto!</h1>
+            <p className="subheading">
+              Welcome to Agroapp, a platform which helps you find the best
+              <br />Government Aided Schemes for Farmers
+            </p>
+          </div>
+          <div className="btn-wrapper">
+            <button className="find-btn">Find schemes for you ➜</button>
+          </div>
+        </div>
+        <section className="scheme-section">
+          <div className="scheme-container">
+            <div className="scheme-item">
+              <span className="scheme-count">2010+</span>
+              <div className="scheme-info">
+                <span className="scheme-title">Total Schemes →</span>
+              </div>
+            </div>
+            <div className="scheme-item">
+              <span className="scheme-count">520+</span>
+              <div className="scheme-info">
+                <span className="scheme-title">Central Schemes →</span>
+              </div>
+            </div>
+            <div className="scheme-item">
+              <span className="scheme-count">1490+</span>
+              <div className="scheme-info">
+                <span className="scheme-title">States/UTs Schemes →</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </div>
   )
 }
 
-export default Home;
+export default Home
