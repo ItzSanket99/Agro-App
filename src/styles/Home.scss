@@ -1,0 +1,47 @@
+.home {
+    .carousel-item {
+      position: relative;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Dim the background */
+        z-index: 1;
+      }
+  
+      .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 2; /* Ensure the caption is above the dimmed background */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        h2 {
+          font-size: 6rem;
+          margin: 0;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+        }
+  
+        p {
+          font-size: 1.5rem;
+          margin: 0.5rem 0 0;
+        }
+      }
+    }
+  }
