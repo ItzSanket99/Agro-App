@@ -45,7 +45,10 @@ const Home = () => {
             </p>
           </div>
           <div className="btn-wrapper">
-            <button className="find-btn">Find schemes for you ➜</button>
+            <button className="find-btn" onClick={(e)=>{
+              e.preventDefault();
+              window.location.href="/scheme";
+            }} >Find schemes for you ➜</button>
           </div>
         </div>
         <section className="scheme-section">
