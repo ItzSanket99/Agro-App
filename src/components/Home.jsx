@@ -9,7 +9,7 @@ import '../styles/Home.scss';
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home' id='home'>
       <Carousel
         infiniteLoop autoPlay showStatus={false} showArrows={false} showThumbs={false} showIndicators={false} interval={3000}
       >
